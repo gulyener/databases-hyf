@@ -1,9 +1,9 @@
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
-const users = require('./users');
-const list = require('./list');
-const todos = require('./todos');
+const users = require('./routes/users');
+const list = require('./routes/list');
+const todos = require('./routes/todos');
 
 const app = express();
 
