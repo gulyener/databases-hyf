@@ -21,6 +21,8 @@ app.use('/', users);
 app.use('/', list);
 app.use('/', todos);
 
-app.listen(3000, () => {
-  console.log('App running on port 3000');
+var port = process.env.PORT || 3000;
+
+app.listen(port, function() {
+  console.log(`Example app listening on port !`);
 });
